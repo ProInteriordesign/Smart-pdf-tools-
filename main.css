@@ -1,0 +1,47 @@
+:root {
+    --primary: #ff6162;
+    --header-bg: #2a3749;
+    --tool-bg: #f8fafc;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f5f7ff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background: var(--header-bg);
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Tool Cards */
+.tool-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 3px solid var(--primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-tools {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
